@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Listando as atividades</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+</head>
+<body>
+    <h1>Gerenciamento de Atividades Complementares</h1>
+    <ul>
+	{% for a in atividades %}
+	<li>{{ a }}</li>
+	{% endfor %}
+    </ul>
+</body>
+</html>
